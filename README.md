@@ -8,7 +8,7 @@ A modern, responsive resume built with JSON Resume and a custom theme featuring 
 - 🌙 **Dark Mode**: Automatic dark/light mode switching with neon accents
 - 🖼️ **Banner Images**: Support for light and dark mode banner backgrounds
 - 📱 **Responsive**: Works on all devices
-- 🎯 **Professional**: Clean, modern design perfect for tech professionals
+- 🎯 **Professional**: Clean, modern design perfect for tech professionals(not really)
 
 ## Quick Start
 
