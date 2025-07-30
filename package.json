@@ -16,7 +16,7 @@
     "dark-mode",
     "responsive"
   ],
-  "author": "Your Name",
+  "author": "joelGitKenobi <joel.eidsmo@me.com>",
   "license": "MIT",
   "dependencies": {
     "resume-cli": "^3.0.8"
