@@ -1,0 +1,151 @@
+{
+  "basics": {
+    "name": "Joel Eidsmo",
+    "label": "Technical Project Manager & Area Lead – Digitalization",
+    "email": "joel.eidsmo@me.com",
+    "phone": "+46 70 471 86 65",
+    "location": {
+      "city": "Skellefteå",
+      "countryCode": "SE",
+      "region": "Västerbotten"
+    },
+    "image": "assets/profile.png",
+    "summary": "Technical leader with hands-on production industry experience. Strong background in process control, digitalization, and cross-functional coordination.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/joeleidsmo"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Northvolt",
+      "position": "Project Manager IT & Digitalization / Digital Area Lead – Formation & Aging",
+      "url": "https://northvolt.com",
+      "startDate": "2022-03-01",
+      "summary": "Responsible for digitalization efforts in manufacturing. As area lead, accountable for digital priorities and coordination for one of the factory buildings in Skellefteå.",
+      "location": "Skellefteå, Sweden",
+      "highlights": [
+        "Led MES integration with warehouse systems, enabling transition from manual handling to full digital traceability",
+        "Led a team to build a scalable packaging sequencing service to handle packaging of multiple products in a single packing machine and owned the product. Project was delivered within scope as planned, and managed continously.",
+        "Key enabler for over 10x throughput increase in the process",
+        "Maintained production downtime from digital systems below 1%"
+      ]
+    },
+    {
+      "name": "Northvolt",
+      "position": "Factory Support Specialist",
+      "url": "https://northvolt.com",
+      "startDate": "2021-05-01",
+      "endDate": "2022-03-01",
+      "summary": "Built team and processes for technical support in production.",
+      "location": "Stockholm, Sweden (remote)",
+      "highlights": [
+        "Created procedures and Jira workflows for first-line support",
+        "Maintained response times under 5 minutes"
+      ]
+    },
+    {
+      "name": "Northvolt and Boliden, Rönnskär (via Adecco and internal roles)",
+      "position": "Process Technician - Mixed",
+      "startDate": "2018-11-01",
+      "endDate": "2021-05-01",
+      "location": "Skellefteå, Sweden",
+      "summary": "Held multiple hands-on roles in high-tech production environments.",
+      "highlights": [
+        "Process control, troubleshooting and automation",
+        "Cleanroom operations, safety, and quality control",
+        "Built strong practical understanding of production systems"
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Sound Designer",
+      "startDate": "2017-09-01",
+      "endDate": "2021-05-01",
+      "location": "Skellefteå, Sweden",
+      "summary": "Worked with sound design and audio production for media.",
+      "highlights": [
+        "Handled entire production chain from concept to delivery"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Solviks Folk High School",
+      "area": "Music Production",
+      "studyType": "Non-degree program",
+      "startDate": "2014-01-01",
+      "endDate": "2017-01-01"
+    },
+    {
+      "institution": "Kaplanskolan (Upper Secondary School)",
+      "area": "Social Science Programme, Leadership Track",
+      "studyType": "Upper Secondary",
+      "startDate": "2011-01-01",
+      "endDate": "2014-01-01"
+    }
+  ],
+"skills": [
+  {
+    "name": "Manufacturing Automation",
+    "level": "expert",
+    "perks": [
+      "Instant Process Mapping",
+      "Failure-Resistant Design",
+      "MES and process Symbiosis"
+    ]
+  },
+    {
+    "name": "Digitalization Strategy",
+    "level": "expert",
+    "perks": [
+      "Operational Model Design",
+      "Systemic Context Awareness",
+      "Scalable Prioritization Structures"
+    ]
+  },
+    {
+    "name": "Project Management",
+    "level": "advanced",
+    "perks": [
+      "Cross-Team Negotiation",
+      "Tech-Driven Alignment",
+      "Scoping Precision"
+    ]
+  },
+  {
+    "name": "Product Management",
+    "level": "advanced",
+    "perks": [
+      "Technical minded Solution Design",
+      "Path of Least Resistance",
+      "Purpose-Led Execution"
+    ]
+  },
+    {
+    "name": "Programming and Data",
+    "level": "intermediate",
+    "perks": [
+      "Go",
+      "SQL & Relational DBs",
+      "Explorative Tinkering"
+    ]
+  },
+  {
+    "name": "Infrastructure and Cloud",
+    "level": "novice",
+    "perks": [
+      "AWS",
+      "Network Topology Insight"
+    ]
+  }
+
+],
+  "meta": {
+    "theme": "./theme/moonoverflow",
+    "bannerLight": "assets/banner_light.png",
+    "bannerDark": "assets/banner_dark.png"
+  }
+}

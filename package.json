@@ -1,0 +1,24 @@
+{
+  "name": "custom-json-resume",
+  "version": "1.0.0",
+  "description": "A modern JSON Resume with custom theme featuring banner images and dark mode support",
+  "main": "resume.html",
+  "scripts": {
+    "build": "cd theme/moonoverflow && npm run build",
+    "export": "resume export resume.html --resume resume.json --theme ./theme/moonoverflow",
+    "dev": "npm run build && npm run export"
+  },
+  "keywords": [
+    "resume",
+    "json-resume",
+    "cv",
+    "portfolio",
+    "dark-mode",
+    "responsive"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "resume-cli": "^3.0.8"
+  }
+}
