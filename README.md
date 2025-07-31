@@ -1,5 +1,7 @@
 # JSON Resume with Custom Theme
 
+####for more info: https://jsonresume.org/
+
 A modern, responsive resume built with JSON Resume and a custom theme featuring banner images and dark mode support.
 
 ## Features
@@ -90,6 +92,7 @@ To modify the theme:
 ## License
 
 MIT License - feel free to use this for your own resume!
+Using https://jsonresume.org/
 
 ## Version
 
