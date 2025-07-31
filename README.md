@@ -4,6 +4,8 @@
 
 A modern, responsive resume built with JSON Resume and a custom theme featuring banner images and dark mode support.
 
+page: https://joelgitkenobi.github.io/myresume/
+
 ## Features
 
 - 🎨 **Custom Theme**: Based on Stack Overflow theme with custom modifications
