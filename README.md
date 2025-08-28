@@ -1,6 +1,10 @@
 # JSON Resume with Custom Theme
 
+####for more info: https://jsonresume.org/
+
 A modern, responsive resume built with JSON Resume and a custom theme featuring banner images and dark mode support.
+
+page: https://joelgitkenobi.github.io/myresume/
 
 ## Features
 
@@ -8,7 +12,7 @@ A modern, responsive resume built with JSON Resume and a custom theme featuring 
 - 🌙 **Dark Mode**: Automatic dark/light mode switching with neon accents
 - 🖼️ **Banner Images**: Support for light and dark mode banner backgrounds
 - 📱 **Responsive**: Works on all devices
-- 🎯 **Professional**: Clean, modern design perfect for tech professionals
+- 🎯 **Professional**: Clean, modern design perfect for tech professionals(not really)
 
 ## Quick Start
 
@@ -90,6 +94,7 @@ To modify the theme:
 ## License
 
 MIT License - feel free to use this for your own resume!
+Using https://jsonresume.org/
 
 ## Version
 
