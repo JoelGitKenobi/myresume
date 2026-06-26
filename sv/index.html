@@ -1,0 +1,219 @@
+<!doctype html><html lang="sv"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CV — Joel Eidsmo</title><style>
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.page {
+  width: min(210mm, 100%);
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 0 0 16mm;
+  background: var(--color-bg);
+}
+
+.section-content {
+  width: calc(100% - 28mm);
+  margin: 0 auto;
+}
+
+.document-section {
+  position: relative;
+  margin: 34px 0 0;
+}
+
+.document-section:first-of-type {
+  margin-top: 0;
+}
+
+.segment {
+  margin: 0 0 20px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.element {
+  margin: 0 0 10px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+ul {
+  margin: 8px 0 0 1.25rem;
+  padding: 0;
+}
+
+li {
+  margin: 0 0 4px;
+}
+
+.label {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 210mm;
+    min-height: 297mm;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0;
+  }
+
+  .segment {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+}
+
+.target-element.type-image.layout-background { display: block; width: 100%; height: auto; object-fit: contain; object-position: top center; z-index: 0; max-width: none; margin: 0; opacity: 0.72; }
+
+.target-section.layout-center > .section-content { text-align: center; display: flex; flex-direction: column; align-items: center; }
+
+.target-element.type-heading.layout-center { text-align: center; justify-content: center; align-items: center; margin-left: auto; margin-right: auto; }
+
+.target-element.type-image.layout-center { text-align: center; justify-content: center; align-items: center; margin-left: auto; margin-right: auto; }
+
+.target-element.type-list.layout-center { text-align: center; justify-content: center; align-items: center; margin-left: auto; margin-right: auto; }
+
+.target-element.type-text.layout-center { text-align: center; justify-content: center; align-items: center; margin-left: auto; margin-right: auto; }
+
+.target-element.type-title.layout-center { text-align: center; justify-content: center; align-items: center; margin-left: auto; margin-right: auto; }
+
+.target-element.type-list.layout-columns ul { columns: 2; column-gap: 32px; }
+
+.target-section.layout-fill > .section-content { width: 100%; max-width: none; }
+
+.target-element.type-heading.layout-fill { width: 100%; max-width: none; }
+
+.target-element.type-image.layout-fill { width: 100%; max-width: none; }
+
+.target-element.type-list.layout-fill { width: 100%; max-width: none; }
+
+.target-element.type-text.layout-fill { width: 100%; max-width: none; }
+
+.target-element.type-title.layout-fill { width: 100%; max-width: none; }
+
+.target-section.layout-fit-content { position: relative; overflow: hidden; padding: 0; margin-top: 0; }
+
+.target-section.layout-fit-content > .section-content { width: 100%; position: relative; z-index: 1; display: grid; place-items: center; padding: 0; }
+
+.target-section.layout-fit-content > .section-content > .target-element { grid-area: 1 / 1; z-index: 1; }
+
+.target-section.layout-fit-content > .section-content > .layout-background { z-index: 0; align-self: start; justify-self: stretch; }
+
+.target-element.type-list.layout-horizontal { margin: 0 0 10px; color: color-mix(in srgb, var(--color-text) 74%, var(--color-bg)); }
+
+.target-section.style-accent > .section-content { border-left: 3px solid var(--color-accent); padding-left: 16px; }
+
+.target-element.type-image.style-accent { filter: var(--wrapper-filter); }
+
+.target-element.type-list.style-accent ul { list-style: none; margin-left: 0; }
+
+.target-element.type-list.style-accent li { border-left: 3px solid var(--color-accent); padding-left: 12px; }
+
+.target-element.type-image.style-badge { width: 186px; height: 186px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; background-color: var(--color-bg); background-image: linear-gradient(var(--color-bg), var(--color-bg)); background-clip: padding-box; border: 5px solid var(--color-accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent) 40%, var(--color-bg)); padding: 4px; margin: 0; }
+
+.target-element.type-list.style-contact { color: color-mix(in srgb, var(--color-text) 78%, var(--color-bg)); }
+
+.target-element.type-image.style-dynamicLineDrawing { background: var(--color-bg); filter: var(--line-drawing-filter); }
+
+.target-section.style-heroSpread > .section-content { grid-template-columns: 1fr; grid-template-rows: minmax(10mm, 1fr) auto minmax(10mm, 1fr) auto minmax(10mm, 1fr); }
+
+.target-section.style-heroSpread > .section-content > .layout-background { grid-area: 1 / 1 / -1 / -1; }
+
+.target-section.style-heroSpread > .section-content > .target-element:not(.layout-background) { justify-self: center; align-self: center; margin: 0; }
+
+.target-section.style-heroSpread > .section-content > .target-element:not(.layout-background):nth-child(2) { grid-area: 2 / 1; }
+
+.target-section.style-heroSpread > .section-content > .target-element:not(.layout-background):nth-child(3) { grid-area: 4 / 1; text-align: center; }
+
+@media screen and (max-width: 720px) { .target-section.style-heroSpread > .section-content { grid-template-rows: minmax(32px, 1fr) auto minmax(32px, 1fr) auto minmax(32px, 1fr); } }
+
+.target-element.type-heading.style-heroTitle { margin: 0; color: var(--color-text); font-size: clamp(1.85rem, 4.5vw, 3.2rem); font-weight: 600; line-height: 1.15; }
+
+.target-element.type-title.style-heroTitle { margin: 0; color: var(--color-text); font-size: clamp(1.85rem, 4.5vw, 3.2rem); font-weight: 600; line-height: 1.15; }
+
+.target-element.type-list.style-meta { color: color-mix(in srgb, var(--color-text) 74%, var(--color-bg)); font-size: 0.95rem; }
+
+.target-element.type-text.style-meta { color: color-mix(in srgb, var(--color-text) 74%, var(--color-bg)); font-size: 0.95rem; }
+
+.target-element.type-heading.style-sectionHeading { margin: 0 0 14px; color: var(--color-accent); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+
+.target-element.type-heading.style-segmentHeading { margin: 0 0 4px; color: var(--color-text); font-size: 1.08rem; font-weight: 700; }
+.locale-switcher {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  width: calc(100% - 28mm);
+  margin: 24px auto 12px;
+}
+
+.locale-switcher a {
+  border: 1px solid color-mix(in srgb, var(--color-accent) 45%, transparent);
+  border-radius: 999px;
+  color: var(--color-accent);
+  font-size: 0.82rem;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.locale-switcher a.active {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+@media print {
+  .locale-switcher { display: none; }
+}
+:root {
+  --color-bg: #f4f1ec;
+  --color-text: #202625;
+  --color-accent: #2f7f78;
+  --wrapper-filter: url(#line-drawing-light);
+  --line-drawing-filter: url(#line-drawing-light);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #101b1a;
+    --color-text: #e7ded4;
+    --color-accent: #6bb8ad;
+    --wrapper-filter: url(#line-drawing-dark);
+    --line-drawing-filter: url(#line-drawing-dark);
+  }
+}</style></head><body><svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><filter id="line-drawing-light" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.1843 0 0 0 0 0.4980 0 0 0 0 0.4706 -0.2126 -0.7152 -0.0722 0 1"></feColorMatrix></filter><filter id="line-drawing-dark" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.4196 0 0 0 0 0.7216 0 0 0 0 0.6784 -0.2126 -0.7152 -0.0722 0 1"></feColorMatrix></filter></defs></svg><main class="page"><nav class="locale-switcher" aria-label="Sprak"><a class="" href="../en/">EN</a><a class="active" href="../sv/">SV</a></nav><section class="document-section target-section type-hero id-hero layout-fit-content style-heroSpread"><div class="section-content"><img class="element target-element type-image id-background_image layout-background style-dynamicLineDrawing content-image" src="../assets/banner_light.png" alt=""><img class="element target-element type-image id-profile_image layout-center style-badge content-image" src="../assets/profile.png" alt="Joel Eidsmo"><h1 class="element target-element type-title id-title layout-center style-heroTitle">CV — Joel Eidsmo</h1></div></section><section class="document-section target-section type-personal_information id-personal_information layout-vertical"><div class="section-content"><article class="segment target-segment id-contact layout-vertical"><p class="element target-element type-list id-contact_items layout-horizontal style-contact"><span class="label">Namn:</span> Joel Eidsmo · <span class="label">Bor:</span> Skelleftea, Sverige · <span class="label">Telefon:</span> +46 70 471 86 65 · <span class="label">E-post:</span> joel.eidsmo@me.com · <span class="label">LinkedIn:</span> linkedin.com/in/joeleidsmo</p></article></div></section><section class="document-section target-section type-highlights id-highlights layout-vertical"><div class="section-content"><h2 class="element target-element type-heading id-section_heading style-sectionHeading">Highlights</h2><div class="element target-element type-list id-highlights layout-vertical style-accent"><ul><li>Ledde MES- och lagerkopplingar som flyttade kritiska produktionsfloden fran manuell hantering mot digital sparbarhet.</li><li>Arbetade i en greenfield-industrimiljo dar standarder, svensk lag och lokala processer behovde tolkas och implementeras medan stora delar av arbetssattet fortfarande var okant.</li><li>Kopplade samman produktion, IT och drift kring praktiska industri-IT-beslut for uppkopplat fabriksarbete med hog genomstromning.</li></ul></div></div></section><section class="document-section target-section type-skills id-skills layout-vertical"><div class="section-content"><h2 class="element target-element type-heading id-section_heading style-sectionHeading">Nyckelkompetenser</h2><article class="segment target-segment id-professionalSkills layout-vertical"><h2 class="element target-element type-heading id-group_heading style-segmentHeading">Fardigheter - Vardet jag levererar</h2><div class="element target-element type-list id-skills layout-columns"><ul><li>Digitalisering av uppkopplad fabrik</li><li>MES- och lagerintegration</li><li>Digital sparbarhet</li><li>Operativa modeller for produktionssupport</li><li>Tvarfunktionell koordinering inom industriell IT</li></ul></div></article><article class="segment target-segment id-methodsStandardsFrameworks layout-vertical"><h2 class="element target-element type-heading id-group_heading style-segmentHeading">Metoder, standarder &amp; ramverk - Hur jag levererar varde</h2><div class="element target-element type-list id-skills layout-columns"><ul><li>Produktagarskap och backloggprioritering</li><li>Scrum-produktagarskap</li><li>Implementering av operativa standarder</li><li>Anpassning till svensk lag och process</li><li>Design av Jira-arbetsfloden</li></ul></div></article><article class="segment target-segment id-technologiesTools layout-vertical"><h2 class="element target-element type-heading id-group_heading style-segmentHeading">Teknik &amp; verktyg - Medlen for att leverera varde</h2><div class="element target-element type-list id-skills layout-columns"><ul><li>MES</li><li>Koppling mellan shop floor och lager</li><li>Go</li><li>SQL och relationsdatabaser</li><li>AWS</li><li>Jira</li></ul></div></article></div></section><section class="document-section target-section type-work_experience id-work_experience layout-vertical"><div class="section-content"><h2 class="element target-element type-heading id-section_heading style-sectionHeading">Arbetslivserfarenhet</h2><article class="segment target-segment id-northvolt-digitalization-lead layout-vertical"><h2 class="element target-element type-heading id-role style-segmentHeading">Projektledare IT &amp; digitalisering / Digital Area Lead - Formation &amp; Aging</h2><p class="element target-element type-list id-meta layout-horizontal style-meta">Northvolt · Skelleftea, Sverige · Mar 2022 - Nuvarande</p><p class="element target-element type-text id-summary layout-vertical style-body">Ansvarade for digitaliseringsarbete inom tillverkning. Som area lead ansvarig for digitala prioriteringar och koordinering for en av fabriksbyggnaderna i Skelleftea.</p><div class="element target-element type-list id-highlights layout-vertical"><ul><li>Ledde MES-integration med lagersystem och mojliggjorde overgangen fran manuell hantering till full digital sparbarhet</li><li>Ledde ett team som byggde en skalbar sekvenseringstjanst for paketering av flera produkter i en och samma packmaskin och agde produkten. Projektet levererades enligt plan och forvaltades kontinuerligt.</li><li>Var en nyckelfaktor bakom mer an 10x okad genomstromning i processen</li><li>Holl produktionsstopp fran digitala system under 1%</li></ul></div></article><article class="segment target-segment id-northvolt-factory-support layout-vertical"><h2 class="element target-element type-heading id-role style-segmentHeading">Factory Support Specialist</h2><p class="element target-element type-list id-meta layout-horizontal style-meta">Northvolt · Stockholm, Sverige (distans) · Maj 2021 - Mar 2022</p><p class="element target-element type-text id-summary layout-vertical style-body">Byggde team och processer for teknisk support i produktion.</p><div class="element target-element type-list id-highlights layout-vertical"><ul><li>Skapade rutiner och Jira-floden for forsta linjens support</li><li>Holl svarstider under 5 minuter</li></ul></div></article><article class="segment target-segment id-production-technician layout-vertical"><h2 class="element target-element type-heading id-role style-segmentHeading">Processtekniker - blandade roller</h2><p class="element target-element type-list id-meta layout-horizontal style-meta">Northvolt och Boliden, Ronnskar (via Adecco och interna roller) · Skelleftea, Sverige · Nov 2018 - Maj 2021</p><p class="element target-element type-text id-summary layout-vertical style-body">Hade flera praktiska roller i hogteknologiska produktionsmiljoer.</p><div class="element target-element type-list id-highlights layout-vertical"><ul><li>Processkontroll, felsokning och automation</li><li>Renrumsarbete, sakerhet och kvalitetskontroll</li><li>Byggde stark praktisk forstaelse for produktionssystem</li></ul></div></article><article class="segment target-segment id-freelance-sound-designer layout-vertical"><h2 class="element target-element type-heading id-role style-segmentHeading">Ljuddesigner</h2><p class="element target-element type-list id-meta layout-horizontal style-meta">Frilans · Skelleftea, Sverige · Sep 2017 - Maj 2021</p><p class="element target-element type-text id-summary layout-vertical style-body">Arbetade med ljuddesign och ljudproduktion for media.</p><div class="element target-element type-list id-highlights layout-vertical"><ul><li>Hanterade hela produktionskedjan fran ide till leverans</li></ul></div></article></div></section><section class="document-section target-section type-education id-education layout-vertical"><div class="section-content"><h2 class="element target-element type-heading id-section_heading style-sectionHeading">Studier</h2><article class="segment target-segment id-solviks layout-vertical"><h2 class="element target-element type-heading id-school style-segmentHeading">Solviks folkhogskola</h2><p class="element target-element type-list id-meta layout-horizontal style-meta">Eftergymnasial folkhogskoleutbildning · Musikproduktion · Jan 2014 - Jan 2017</p></article><article class="segment target-segment id-kaplanskolan layout-vertical"><h2 class="element target-element type-heading id-school style-segmentHeading">Kaplanskolan</h2><p class="element target-element type-list id-meta layout-horizontal style-meta">Gymnasieutbildning · Samhallsvetenskapsprogrammet, ledarskapsinriktning · Jan 2011 - Jan 2014</p></article></div></section><section class="document-section target-section type-certifications id-certifications layout-vertical"><div class="section-content"><h2 class="element target-element type-heading id-section_heading style-sectionHeading">Certifieringar &amp; behorigheter</h2><article class="segment target-segment id-forklift layout-vertical"><h2 class="element target-element type-heading id-certification style-segmentHeading">Fork lift certified</h2></article><article class="segment target-segment id-overhead-crane layout-vertical"><h2 class="element target-element type-heading id-certification style-segmentHeading">Traverskort for hyttmanovrerad travers</h2></article><article class="segment target-segment id-pspo-i layout-vertical"><h2 class="element target-element type-heading id-certification style-segmentHeading">Professional Scrum Product Owner I (PSPO I)</h2><p class="element target-element type-list id-meta layout-horizontal style-meta">Scrum.org</p><img class="element target-element type-image id-badge layout-vertical content-image" src="../assets/certifications/pspo-i.png" alt="Professional Scrum Product Owner I (PSPO I)"></article></div></section></main></body></html>
